@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
   return (
@@ -19,6 +19,7 @@ export const Footer = () => {
             <a
               target="_blank"
               href="https://kodego.ph/"
+              rel="noreferrer"
               className="mr-4 hover:underline md:mr-6 "
             >
               About
@@ -28,6 +29,7 @@ export const Footer = () => {
             <a
               target="_blank"
               href="https://kodego.ph/"
+              rel="noreferrer"
               className="mr-4 hover:underline md:mr-6"
             >
               Privacy Policy
@@ -37,6 +39,7 @@ export const Footer = () => {
             <a
               target="_blank"
               href="https://kodego.ph/"
+              rel="noreferrer"
               className="mr-4 hover:underline md:mr-6"
             >
               Licensing
@@ -46,6 +49,7 @@ export const Footer = () => {
             <a
               target="_blank"
               href="https://kodego.ph/"
+              rel="noreferrer"
               className="hover:underline"
             >
               Contact
