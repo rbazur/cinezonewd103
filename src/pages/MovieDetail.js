@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import Backup from '../assets/images/no-image.jpg';
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import Backup from "../assets/images/no-image.jpg";
 
 export const MovieDetail = () => {
   const params = useParams();
@@ -25,11 +25,7 @@ export const MovieDetail = () => {
     <main>
       <section className="flex justify-around flex-wrap py-5">
         <div className="max-w-sm">
-          <img
-            className="rounded"
-            src={image}
-            alt={movie.title}
-          />
+          <img className="rounded" src={image} alt={movie.title} />
         </div>
         <div className="max-w-2xl text-gray-700 text-lg dark:text-white">
           <h1 className="text-4xl font-bold my-3 text-center lg:text-left">
@@ -43,13 +39,13 @@ export const MovieDetail = () => {
                   className="mr-2 border border-gray-200 rounded dark: border-gray-600 p-2"
                   key={genre.id}
                 >
-                  {' '}
+                  {" "}
                   {genre.name}
                 </span>
               ))}
             </p>
           ) : (
-            ''
+            ""
           )}
 
           <div className="flex items-center">
