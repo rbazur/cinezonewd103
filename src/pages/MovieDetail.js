@@ -1,5 +1,3 @@
 export const MovieDetail = () => {
-  return (
-    <main>MovieDetail</main>
-  )
-}
+  return <main>MovieDetail</main>;
+};
