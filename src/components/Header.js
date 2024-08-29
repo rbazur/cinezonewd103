@@ -1,28 +1,21 @@
-import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import Logo from '../assets/logo.png';
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import Logo from "../assets/logo.png";
 
 export const Header = () => {
   const [hidden, setHidden] = useState(true);
   const activeClass =
-    'text-base block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500';
+    "text-base block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500";
 
   const inActiveClass =
-    'text-base block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700';
+    "text-base block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700";
 
   return (
     <header>
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link
-            to="/"
-            className="flex items-center"
-          >
-            <img
-              src={Logo}
-              className="h-8 mr-3"
-              alt="CineZone Logo"
-            />
+          <Link to="/" className="flex items-center">
+            <img src={Logo} className="h-8 mr-3" alt="CineZone Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               CineZone
             </span>
@@ -108,7 +101,7 @@ export const Header = () => {
           </div>
           <div
             className={`${
-              hidden ? 'hidden' : ''
+              hidden ? "hidden" : ""
             } items-center justify-between  w-full md:flex md:w-auto md:order-1`}
             id="navbar-search"
           >
