@@ -1,10 +1,10 @@
-import { useSearchParams } from 'react-router-dom';
-import { useFetch } from '../hooks/useFetch';
-import { Card } from '../components';
+import { useSearchParams } from "react-router-dom";
+import { useFetch } from "../hooks/useFetch";
+import { Card } from "../components";
 
 export const Search = ({ apiPath }) => {
   const [searchParams] = useSearchParams();
-  const queryTerm = searchParams.get('q');
+  const queryTerm = searchParams.get("q");
   const { data: movies } = useFetch(apiPath, queryTerm);
   return (
     <main>
@@ -19,10 +19,7 @@ export const Search = ({ apiPath }) => {
       <section className="max-w-7xl mx-auto py-7">
         <div className="flex justify-start flex-wrap other:justify-evenly">
           {movies.map((movie) => (
-            <Card
-              key={movie.id}
-              movie={movie}
-            />
+            <Card key={movie.id} movie={movie} />
           ))}
         </div>
       </section>
