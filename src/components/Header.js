@@ -1,20 +1,13 @@
-import { Link, NavLink } from 'react-router-dom';
-import Logo from '../assets/logo.png';
+import { Link, NavLink } from "react-router-dom";
+import Logo from "../assets/logo.png";
 
 export const Header = () => {
   return (
     <header>
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link
-            to="/"
-            className="flex items-center"
-          >
-            <img
-              src={Logo}
-              className="h-8 mr-3"
-              alt="Flowbite Logo"
-            />
+          <Link to="/" className="flex items-center">
+            <img src={Logo} className="h-8 mr-3" alt="Flowbite Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               CineZone
             </span>
